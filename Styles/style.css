@@ -1,8 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Helvetica;
+    font-family: 'Helvetica';
     font-size: 22px;
     color: seashell;
     background-color: black;
     opacity: 0.9;
     text-align: center;
+}
+
+.head-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 69px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+}
+
+.head-container img {
+    max-height: 50px;
+    margin-left: 10px;
+}
+
+.head-container li {
+    text-decoration: underline;
+    list-style: none;
+    display: inline;
+    margin-inline: 10px;
+}
+
+.our-mission {
+    display: flex;
+    justify-content: center;
+}
+
+.our-mission img {
+    margin-top: 70px;
+}
+
+.text-on-image {
+    border: 1px solid red;
 }
