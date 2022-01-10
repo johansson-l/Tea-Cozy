@@ -1,3 +1,4 @@
+/* Reset browser margin and padding*/
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +22,8 @@ body {
     position: fixed;
     width: 100%;
     border-bottom: 1px solid seashell;
+    background-color: black;
+    z-index: 1;
 }
 
 .head-container img {
@@ -36,14 +39,81 @@ body {
 }
 
 .our-mission {
-    display: flex;
-    justify-content: center;
+    position: relative;
+}
+
+#mission-text {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    top: 50%;
 }
 
 .our-mission img {
     margin-top: 70px;
 }
 
-.text-on-image {
+.offering {
     border: 1px solid red;
+    width: 1000px;
+    display: inline-flex;
+}
+
+.container-offering img {
+    height: 200px;
+    width: 300px;
+}
+
+.container-offering {
+    margin: 100px auto;
+}
+
+.spacer {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item figcaption {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.location-container {
+    background-image: url(../Content/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    border: 1px solid red;
+    margin-bottom: 15px;
+}
+
+#locations {
+    margin-top: 60px;
+}
+
+.location-child {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px 40px;
+    background-color: black;
+    width: 300px;
+    height: 200px;
+}
+
+.contact-container {
+    height: 200px;
+}
+
+.contact-child {
+    display: inline-flex;
+    flex-flow: column wrap;
+
 }
